@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/JavaScript">
+    function loginValidate() {
+        var user = document.getElementById("uname").value 
+        var pass = document.getElementById("pname").value;
+        if(user.length==0){
+           document.getElementById("e2").innerHTML=""
+           document.getElementById("e1").innerHTML="UserName is required";
+            return false;
+        }else if(pass.length==0){
+            document.getElementById("e1").innerHTML=""
+            document.getElementById("e2").innerHTML="Password is required";
+            return false;
+        }else if(user=="APPU" && pass=="123"){
+            alert("Successfully Login")
+            alert("Welcome Expert")
+            return true;
+        }else {
+            document.getElementById("e1").innerHTML=""
+            document.getElementById("e2").innerHTML=""
+            alert("Failure try once again")
+            return false;
+        }
+    }
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+    body {
+      background-image: url('Background.jpg');
+    }
+</style>
+</head>
+<body>
+    
+    <b><h1>Login Expert</h1></b>
+    <form action="expert.html" onsubmit="return loginValidate()">
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid">
+             
+        <label><b><h3>UserName:</b></h3></label>
+        <input type="text" name="uname" id="uname"/>
+        <span id="e1" style="color:red;"></span>
+        <br/>
+        <label><b><h3>Password:</b></h3></label>
+        <input type="password" name="pname" id="pname"/>
+        <span id="e2" style="color:red;"></span>
+        <br/>
+        <input type="submit" value="submit"class="btn btn-warning"/>
+        <input type="reset" value="reset"class="btn btn-info"/>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+          background-image: url('Background.jpg');
+        }
+        
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+</head>
+<body>
+  
+</br>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Welcome to Blog Edit Page</h1>
+        </br>
+        <p>Simple JavaScript Project : To View , Edit (as expert) </p>
+        <input type="button" class="btn btn-warning" value="ABOUT US"data-toggle="modal" data-target="#MyModal"/>          
+            <div class="modal" id="MyModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>ABOUT US : </h3>
+                            <button data-dismiss="modal" type="button" class="close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p> 
+                            <b> Simplilearn is Training center .</b> </br>
+                            We give coaching for all web developing technologies . </br>
+                            <b>Courses </b>:
+                            <ul> <li>JAVA Development courses</li> </br>
+                              <li>Full stack Development Courses</li> </br>
+                              <li>WEB development tranings</li> </br> </ul> 
+                                    And many more carrer development courses . 
+                            </p>    
+                        </div>
+                        <div class="modal-footer" align="right">
+                        &copy; by Simplilearn
+                        <input type="button" class="btn btn-danger" value ="Close" data-dismiss="modal"/>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" class="btn btn-primary" value="CONTACT US"data-toggle="modal" data-target="#MyModals"/>          
+            <div class="modal" id="MyModals">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>CONTACT US : </h3>
+                            <button data-dismiss="modal1" type="button" class="close">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p> 
+                            <b> Simplilearn is Training center .</b> </br>
+                            <b>Contact us at</b> : XXXXXXX</br>
+                            <b></b>Mail us at</b>    : XXXXXXX@gmail.com</br>
+                            </p>    
+                        </div>
+                        <div class="modal-footer" align="right">
+                        &copy; by Simplilearn
+                        <input type="button" class="btn btn-danger" value ="Close" data-dismiss="modal"/>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <button onclick="window.location.href='welcome.html'"class="btn btn-danger">HOME</button>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">LOGIN</button>
+            <div class="dropdown-content">
+              <a href="loginForm.html">EXPERT LOGIN</a> 
+            </div>
+          </div>
+    </div>
+ </div>
+ <header>
+  <h1>Simplilearn</h1>
+</header>
+<div class="row">
+  <div class="left-column">
+    <div class="card">
+    <h2>Welcome</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <img src="img/blog1.jpg" alt="blog "/>
+    <p>Courses: </p>
+    <p>Javascript , html , CSS , MEAN</p>
+    </div>
+    <div class="card">
+    <h2>Simplilearn</h2>
+    <h5>..............</h5>
+    <img src="html1.png" alt="blog "/>
+    <p>Some text..</p>
+    <p>................</p>
+    </div>
+  </div>
+
+  <div class="right-column">
+    <div class="card">
+       <h2>More about us.....</h2>
+       <img src="html2.jfif" alt="me"/>
+       <p>Become a Developer...</p>
+    </div>
+    <div class="card">
+       <h1>Popular Posts</h1>
+       <img src="html3.jpeg" alt="popular"/>
+       <img src="html4.png" alt="popular"/>
+       <img src="html5.png" alt="popular"/>
+    </div>
+    <div class="card">
+      <h3>Thank you for visiting .......</h3>
+      <p>View Contact details on top....</p>
+    </div>
+  </div>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

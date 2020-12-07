@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+          background-image: url('Background.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+    <button onclick="window.location.href='welcome.html'"class="btn btn-danger">HOME</button>
+    <script src="expertAdd.js"></script>
+    <h1><b>WELCOME EXPERT :</b></h1>
+    <form>
+        <label><h3><b>NEW BLOG : </h3></b></label>
+        <input type="text" name="name" id="name"style="font-size: 18pt; height:400px; width:280px;"><br/>
+        
+        <input type="button" value="Add Details" onclick="onFormSubmit()"class="btn btn-success"/>
+    </form>
+    <hr>
+    <table id="employeeList" border="0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+    </table>
+        </div>
+    </div>
+</body>
+</html>
